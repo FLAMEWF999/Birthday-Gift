@@ -4,18 +4,26 @@ body {
     min-height: 100vh;
     background: linear-gradient(
         200deg,
-        
         #0e1742 35%,
         #142651 50%,
         #1e3665 70%,
         #2a3c95 90%,
         #345cc1 100%
     );
+    overflow: hidden;
 }
+
 .stars {
     position: fixed;
     inset: 0;
-    z-index: 1;
     pointer-events: none;
+    overflow: hidden;
 }
- 
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0 0 5px white;
+}
