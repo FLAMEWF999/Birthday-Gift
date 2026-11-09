@@ -4,9 +4,9 @@ body {
     min-height: 100vh;
     background: linear-gradient(
         200deg,
-        #0e1742 35%,
-        #142651 50%,
-        #1e3665 70%,
+        #0e1742 40%,
+        #142651 55%,
+        #1e3665 75%,
         #2a3c95 90%,
         #345cc1 100%
     );
@@ -26,4 +26,21 @@ body {
     border-radius: 50%;
     opacity: 1;
     box-shadow: 0 0 5px white;
+}
+ 
+.moon {
+    position: absolute;
+    background-color: rgb(189, 200, 93);
+    border-radius: 50%;
+    box-shadow: 0 0 0px #817c2c;
+    opacity: 0.9;
+}
+
+.moon0{
+    position: absolute;
+    background-color:#0e1742 ;
+    border-radius: 50%;
+   
+
+
 }
