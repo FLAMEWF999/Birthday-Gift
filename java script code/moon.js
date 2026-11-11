@@ -14,3 +14,6 @@ moon0.style.left = '135px';
 moon0.style.top = '23px';
 
 document.querySelector('.stars').appendChild(moon0);
+
+
+// this is nice >>>>>>>>><<<<<<<<<

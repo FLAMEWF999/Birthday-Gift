@@ -23,6 +23,7 @@ function create_star(size, x, y) {
     return star;
 }
 
+// دالة توليد النجوم المتحركة
 function spawn_star() {
     const size = random_number(2, 4);
     const speed_y = random_number(0.1, 0.9);
