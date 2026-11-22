@@ -1,3 +1,4 @@
+
 let btn = document.getElementById("start_button");
 let isArabic = true;
 
@@ -11,3 +12,4 @@ setInterval(()=>{
         isArabic= true; 
     }
 },2500);
+

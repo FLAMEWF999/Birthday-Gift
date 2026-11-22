@@ -3,25 +3,29 @@ body{
     min-height: 120vh;
     background: linear-gradient(
         135deg,
-        #cd66ea 25%,
+        #cd66ea 30%,
         #ea66db 35%,
-        #f874b8 55%,
+        #f874b8 45%,
+        #f476b7 50%,
         #ed7fb8 55%,
-        #e259eb 67%
+        #f579b9 60%,
+        #ed61c3 65%,
+        #e053b6 70%
         
 
     );
     overflow: visible;
+    width: 390px;
+    height: 844px;
    
     
 }
 
 .bubble{
     position: absolute;
-    left: 250px;
-    top: 300px;
-    height: 100px;
-    width: 100px;
+
+    height: var(--siz);
+    width: var(--siz);
     border-radius: 50%;
     border: 1px solid white;
     padding: 2px;
@@ -29,6 +33,13 @@ body{
     opacity: 1;
     box-shadow:inset 0 0 13px 3px  #dfdcdc ;
     filter: blur();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    color: rgb(125, 3, 92);
+
 
    
 
@@ -39,33 +50,107 @@ body{
 .bubble::before {
     content: "";
     position: absolute;
-    left:5px;
-    top:10px;
+    left:5%;
+    top:10%;
    
     border-radius: 200% 30% 200% 30%;
-    border-top: 18px solid rgba(255, 255, 255, 0.7);
-    border-left: 18px solid rgba(255, 255, 255, 0.7);
+    border-top: calc(var(--siz) * 0.15)  solid rgba(255, 255, 255, 0.7);
+    border-left: calc(var(--siz)* 0.15) solid rgba(255, 255, 255, 0.7);
     filter: blur(3px);
     transform: rotate(-10deg);
-    width: 30px;
-    height: 30px;
+    width: 30%;
+    height: 30%;
     
 }
 .bubble::after{
     content: "";
     position: absolute;
-    left:65px;
-    top:50px;
+    left:65%;
+    top:50%;
     border-radius: 300% 10% 300%10%;
-    border-top: 8px solid rgba(255, 255, 255, 0.7);
-    border-left: 8px solid rgba(255, 255, 255, 0.7);
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+    border-left: 5px solid rgba(255, 255, 255, 0.7);
     filter: blur(2px);
     transform: rotate(160deg);
-    width: 30px;
-    height: 30px;
+    width: 30%;
+    height: 30%;
 }
 
 
+    
+
+
+
+.input{
+    position: relative;
+    border: 3px solid #880879;
+    border-radius: 20px;
+    background-color: pink;
+    color: rgb(206, 11, 131);
+    padding: 5px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 20px;
+    height: 30px;
+    width: 140px;
+    top:400px;
+    left:-195x;
+    
+
+
+}
+.heart{
+    position: inherit;
+
+}
+
+.button{
+    position: relative;
+    height: 30px;
+    width: 70px;
+    border: 3px solid #08886e;
+    border-radius: 20px;
+    color: rgb(22, 118, 51);
+    padding: 5px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 16px;
+    height: 30px;
+    width: 70px;
+    top:400px;
+    left:-110px;
+    background-color: rgb(0, 255, 94);
+    transform: translate(-50%, 150%);
+
+
+}
+button:active {
+    transform: translate(-50%, 150%) scale(0.95);
+}
+
+.button1{
+    position: relative;
+    height: 30px;
+    width: 70px;
+    border: 3px solid #880808;
+    border-radius: 20px;
+    color: rgb(118, 22, 22);
+    padding: 5px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 16px;
+    height: 30px;
+    width: 70px;
+    top:400px;
+    left:-120px;
+    background-color: rgb(255, 8, 0);
+    transform: translate(-50%, 150%);
+
+
+}
+button:active {
+    transform: translate(-50%, 150%) scale(0.95);
+}
 
 
 
