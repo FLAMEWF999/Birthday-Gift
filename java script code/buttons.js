@@ -13,3 +13,19 @@ setInterval(()=>{
     }
 },2500);
 
+
+let btn1 = document.getElementById("next-button");
+let isArabic1 = true;
+
+setInterval(()=>{
+    if (isArabic1){
+        btn1.textContent='contenue trip';
+        isArabic1= false;
+    }
+    else{
+        btn1.textContent='تابع الرحلة';
+        isArabic1= true; 
+    }
+},2500);
+
+

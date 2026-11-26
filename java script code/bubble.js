@@ -37,7 +37,7 @@ function creat_bubble(wish) {
     const frequency = random_number(0.01, 0.04);
 
     const siz = random_number(60, 120);
-    const x = random_number(-200, 400);
+    const x = random_number(0, 400);
     const y = 700;
 
     const start_x = x;
@@ -85,6 +85,8 @@ function move_bubble(
     }
 }
 
+let next_button = document.getElementById('next-button');
+
 confirm_btn.addEventListener('pointerdown', 
     function() {
         let wish =input.value;
@@ -96,8 +98,14 @@ confirm_btn.addEventListener('pointerdown',
             creat_bubble(wish)
         }
         ,1500)
+        setTimeout(()=>{
+            next_button.style.display= 'block'
+
+        },10000
+        )
     }
 )
+
 
 
 

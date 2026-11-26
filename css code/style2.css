@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    min-height: 120vh;    
+    background: linear-gradient(
+    135deg,
+    #FFF8DC 0%,
+    #FFE9A8 35%,
+    #F9D976 65%,
+    #EFC45A 100%
+);
+}
+
+.envelops {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+}
+
+
+.envelop{
+    position: absolute;
+    border: 1px solid #050003;
+    border-radius: 3px;
+    background-color:#ab046e ;
+    height: 80px;
+    width: 140px;
+    top: 10%;
+    left: 50%;
+    perspective: 600px;
+
+    transform: rotate(var(--theta,0));
+    transition: transform 1s ease-in-out;
+
+}
+.envelop::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;  
+    border-left: 60px solid var(--bg-color,rgb(255, 0, 153));
+    z-index: 1;
+
+    left : 0%
+
+}
+.envelop::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;  
+    border-right: 60px solid var(--bg-color,rgb(255, 0, 153));
+    z-index: 1;
+
+
+}
+
+
+
+.t_bottom{
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent ;
+    border-bottom: 47px solid var(--bg-bottom-color,rgb(216, 0, 130));
+    z-index: 2;
+
+    top: 42%;
+    
+}
+.cover{
+    position: absolute;
+    width: 0;
+    height:0; 
+
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 50px solid  var(--bg-cover-color,rgb(189, 39, 129)) ;
+    z-index: 3;
+
+    transform-origin: top center;
+    transform: rotateX(0deg);
+    transition: transform 4s ease-in-out;
+    
+    backface-visibility: visible;
+
+
+    
+
+    
+
+}
+.envelop.open .cover {
+    transform: rotateX(180deg);
+    z-index: 3;
+}
+
+.paper{
+    position: absolute;
+    width: 120px;
+    height: 75px;
+
+    
+
+    background-color: rgb(255, 250, 176);
+    border: 2px solid rgb(58, 56, 16);
+
+    left: 10px;
+    top: 0;
+
+    transition: transform 4s ease-in-out;
+    
+    transform-origin: center;
+
+    font-size: small;
+    
+    
+   
+}
+
+.envelop.show .paper{
+    transform: scaleY(2);
+    z-index: 4;
+}
+
+.button2{
+    position: absolute;
+    top:100px;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    padding: 1px 2px;
+    font-size: 15px;
+    color: #f4e4c8;
+    background-color: #d1ad1b;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    opacity: 5;
+    
+    
+}
+
+.heart{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(255, 0, 98);
+    transform: rotate(-35deg);
+    z-index: 6;
+
+    top: -10px;
+    left: 130px;
+}
+.heart::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(255, 0, 98);
+    border-radius: 50%;  
+    z-index: 8;  
+
+    top: 0px;
+    left: 10px;
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(255, 0, 98);
+    border-radius: 50%;  
+    z-index: 8;  
+
+    top: -10px;
+    left: 0px;
+}

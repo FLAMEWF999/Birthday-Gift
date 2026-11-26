@@ -14,9 +14,10 @@ body{
         
 
     );
-    overflow: visible;
-    width: 390px;
-    height: 844px;
+    
+    width: 100%;
+    position: relative;
+    
    
     
 }
@@ -82,7 +83,7 @@ body{
 
 
 .input{
-    position: relative;
+    position: absolute;
     border: 3px solid #880879;
     border-radius: 20px;
     background-color: pink;
@@ -93,8 +94,8 @@ body{
     font-size: 20px;
     height: 30px;
     width: 140px;
-    top:400px;
-    left:-195x;
+    top:390px;
+    left:35%;
     
 
 
@@ -105,7 +106,7 @@ body{
 }
 
 .button{
-    position: relative;
+    position: absolute;
     height: 30px;
     width: 70px;
     border: 3px solid #08886e;
@@ -118,7 +119,7 @@ body{
     height: 30px;
     width: 70px;
     top:400px;
-    left:-110px;
+    left:60%;
     background-color: rgb(0, 255, 94);
     transform: translate(-50%, 150%);
 
@@ -129,7 +130,7 @@ button:active {
 }
 
 .button1{
-    position: relative;
+    position: absolute;
     height: 30px;
     width: 70px;
     border: 3px solid #880808;
@@ -142,16 +143,32 @@ button:active {
     height: 30px;
     width: 70px;
     top:400px;
-    left:-120px;
+    left:43%;
     background-color: rgb(255, 8, 0);
     transform: translate(-50%, 150%);
 
 
 }
-button:active {
-    transform: translate(-50%, 150%) scale(0.95);
+
+
+
+.button2{
+    position: absolute;
+    top:-100px;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    padding: 1px 2px;
+    font-size: 15px;
+    color: #f4c8c8;
+    background-color: #d11b58;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    opacity: 5;
+    display: none;
+    
 }
-
-
-
-
