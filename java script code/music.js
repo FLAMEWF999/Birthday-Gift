@@ -1,7 +1,7 @@
 let btn= document.getElementById('audio_btn');
 let audios = [
-    '../audios/1a.mpeg',
     '../audios/2a.mpeg',
+    '../audios/1a.mpeg',
     '../audios/3a.mpeg',
     '../audios/4a.mpeg',
     '../audios/5a.mpeg',
