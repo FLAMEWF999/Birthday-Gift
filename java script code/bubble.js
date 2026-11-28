@@ -32,7 +32,7 @@ function creat_bubble(wish) {
     
 
 
-    const speed_y = random_number(0.5, 1);
+    const speed_y = random_number(1, 3);
     const amplitude = random_number(10, 70);
     const frequency = random_number(0.01, 0.04);
 

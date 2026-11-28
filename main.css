@@ -9,7 +9,7 @@ body{
     background-color: aqua;
     border-radius: 4px;
     border: 3px solid #0a2591;
-    font-size: 25px;
+    font-size: 20px;
     top: 300px;
-    left: -150px;
+    left: -50%;
 }
