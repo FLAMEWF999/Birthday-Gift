@@ -107,6 +107,7 @@ body{
     width: 120px;
     height: 75px;
 
+
     
 
     background-color: rgb(255, 250, 176);
@@ -119,7 +120,7 @@ body{
     
     transform-origin: center;
 
-    font-size: small;
+    font-size: smaller;
     
     
    

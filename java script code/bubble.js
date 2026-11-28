@@ -37,7 +37,7 @@ function creat_bubble(wish) {
     const frequency = random_number(0.01, 0.04);
 
     const siz = random_number(60, 120);
-    const x = random_number(0, 400);
+    const x = random_number(0, window.innerWidth);
     const y = 700;
 
     const start_x = x;
