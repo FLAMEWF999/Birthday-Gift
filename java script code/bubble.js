@@ -97,7 +97,7 @@ confirm_btn.addEventListener('pointerdown',
 
             creat_bubble(wish)
         }
-        ,1500)
+        ,1000)
         setTimeout(()=>{
             next_button.style.display= 'block'
 
