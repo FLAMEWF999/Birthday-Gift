@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang=>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
     <title>Birthday Gift</title>
     <link rel='stylesheet' href='../css code/style3.css'>
     <script src="../java script code/music.js" defer></script>
+    <script src="../java script code/hearts.js" defer ></script>
 </head>
 <body>
-    <div class="p2">صندوق الهدية بالأسفل اضغط لفتحه ,<br> لا تتوقع شيء رائع جدا </div>
+    <div class="p2" id="p2">صندوق الهدية بالأسفل اضغط لفتحه ,<br> لا تتوقع شيء رائع جدا </div>
+    <div class="final_text" id="final_text" ></div>
     <div class="video" >
         <video  id="video" src="../videos/musicv.mp4" autoplay muted loop></video>
     </div>
 
     <button class="button" id="audio_btn" >اضغط لتشغيل اغنية</button>
 
-    <div class="hearts" ></div>
+    <div class="hearts" id="hearts"></div>
     <div class="box-gift" id="box-gift">
         
-        <div class="cover">
-            <div class="nood"></div>
+        <div class="cover" id="cover">
+            <div class="nood">
+                <div class="l_top_nood" ></div>
+                <div class="l_buttom_nood"></div>
+                <div class="r_buttom_nood"></div>
+                <div class="r_top_nood" ></div>
+            </div>
         </div>
     </div>
 </body>
